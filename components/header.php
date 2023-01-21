@@ -10,20 +10,17 @@
 <header class="site-header">
     <nav class="site-navigation">
         <a href="index.php">
-            <img src="img/hotel_logo.png" width="auto" height= 70px alt="Логотип отеля">
+            <img src="img/restaurant_logo.png" width="auto" height= 70px alt="Логотип сервиса">
         </a>
         <ul class="navigation-list">
 
             <?php
             if ($_SESSION['username']) {
-                if ($_SESSION['admin']) {
-                    echo ('<li><a href="product_add.php">Добавить продукт</a></li>');;
-                }
 
                 echo ('<li><a href="room.php">Рестораны</a></li>');
-                echo ('<li><a href="bron_list.php">Брони</a></li>');
+                echo ('<li><a href="book_list.php">Брони</a></li>');
                 echo ('<li><a href="guest.php">Гости</a></li>');
-                echo ('<li><a href="new_bron.php">Новая бронь</a></li>');
+                echo ('<li><a href="new_book.php">Новая бронь</a></li>');
                 echo ('<li><a href="index.php?logout=1">'.$_SESSION['username'].' (Выйти) </a></li>');
             }
             else {

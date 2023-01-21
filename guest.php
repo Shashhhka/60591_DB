@@ -8,11 +8,11 @@ if ($_SESSION['username']) {
 
     if ($_POST['guestdel']){
         $guestdel = $_POST['guestdel'];
-        $result = $conn->query("SELECT * FROM Guest WHERE id='$guestdel'");
+        $result = $conn->query("SELECT * FROM guest WHERE id='$guestdel'");
         if ($row = $result->fetch()){
             // $conn->query("DELETE FROM Guest WHERE Guest.id='$guestdel'");
             try {
-                $sql = "DELETE FROM Guest WHERE Guest.id='$guestdel'";
+                $sql = "DELETE FROM guest WHERE guest.id='$guestdel'";
                 $stmt = $conn->prepare($sql);
                 $stmt->bindValue(":userid", $_POST["guestdel"]);
                 $stmt->execute();
@@ -26,14 +26,14 @@ if ($_SESSION['username']) {
         require('components/message.php');
     }
 
-    $sql = "SELECT * FROM Guest";
+    $sql = "SELECT * FROM guest";
     if($result = $conn->query($sql))
     {
-        echo "<table><a><tr> <th>Код гостя</th> <th>ФИО гостя</th></tr>";
+        echo "<table><a><tr> <th>ID гостя</th> <th>ФИО гостя</th></tr>";
         foreach($result as $row){
             echo "<tr>";
             echo "<td>" . $row["id"] . "</td>";
-            echo "<td>" . $row["Full_name"] . "</td>";
+            echo "<td>" . $row["name"] . "</td>";
             echo "</tr>";
         }
         echo "</a></table>";

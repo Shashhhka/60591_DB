@@ -1,7 +1,7 @@
 <footer class="site-footer">
     <div class="container">
         <ul class="navigation-list">
-            <li><a>© Информационная система отеля, 2022</a></li>
+            <li><p>© Сервис принадлежит Shasha Corp., 2023</p></li>
         </ul>
     </div>
 </footer>

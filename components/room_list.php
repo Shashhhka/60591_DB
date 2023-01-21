@@ -1,9 +1,10 @@
 <section class="catalog">
     <div class="container">
-        <h1 class="catalog-title">Наши номера</h1>
+        <h1 class="catalog-title">Подборка заведеий</h1>
+
         <ol class="pagination">
 
-            <h1 class="catalog-a">Корпус</h1>
+            <h1 class="catalog-a">Ресторан</h1>
 
             <?php for ($i = 1; $i <= $pages_total; $i = $i + 1): ?>
                 <li>
@@ -11,6 +12,7 @@
                 </li>
             <?php endfor; ?>
         </ol>
+
         <ul class="products-list">
 
             <?php while ($item = $result->fetch()) {?>
