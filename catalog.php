@@ -1,5 +1,5 @@
 <?php
-require('rooms_db.php');
+require('rest_db.php');
 require('dbconnect.php');
 $limit = 3;
 $page = intval($_GET['page']) ?: 1;
@@ -17,5 +17,5 @@ $pages_total = ceil($pages);
 
 require('auth.php');
 require('components/header.php');
-require('components/room_list.php');
+require('components/rest_list.php');
 require('components/footer.php');

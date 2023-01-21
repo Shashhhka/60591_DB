@@ -17,7 +17,7 @@
             <?php
             if ($_SESSION['username']) {
 
-                echo ('<li><a href="room.php">Рестораны</a></li>');
+                echo ('<li><a href="restaurants.php">Рестораны</a></li>');
                 echo ('<li><a href="book_list.php">Брони</a></li>');
                 echo ('<li><a href="guest.php">Гости</a></li>');
                 echo ('<li><a href="new_book.php">Новая бронь</a></li>');

@@ -3,21 +3,19 @@
         <h1 class="catalog-title">Создание бронирования</h1>
         <form method="post" action="..\new_bookinf.php" enctype="multipart/form-data">
             <p>
-                <label for="id1">Дата заезда:</label>
-                <input type="date" name="date_arrival" id="id1">
+                <label for="id1">Дата брони:</label>
+                <input type="date" name="date_booking" id="id1">
             </p>
             <p>
-                <label for="id2">Дата выезда:</label>
-                <input type="date" name="date_departure" id="id2">
+                <label for="id2">Время начала брони:</label>
+                <input type="time" name="time_start" step="2" id="id2">
             </p>
             <p>
-                <label for="id3">Количество персон:</label>
-                <select name="number_persons" id="id3">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                </select>
+                <label for="id3">Время окончания брони:</label>
+                <input type="time" name="time_end" step="2" id="id3">
             </p>
-            <p><input type="submit" value="Проверить наличие номеров"></p>
+
+            <p><input type="submit" value="Проверить столики, возможные для брони"></p>
         </form>
     </div>
 </section>

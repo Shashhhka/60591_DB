@@ -13,8 +13,7 @@
 
         <?php
         if ($_SESSION['username']) {
-            if ($_SESSION['admin']) {
-            }
+
         }
         else {
             echo "<h6> Для работы с сервисом необходимо пройти авторизацию</h6> <br><br><br>";

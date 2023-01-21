@@ -8,9 +8,9 @@ $id = $_GET['id'];;
 
 $result = $conn->query("SELECT * FROM restaurant WHERE id=".$id);
 $row = $result->fetch();
-$Room_number = $row['Room_number'];
+$name = $row['name'];
 $img_url = $row['img_url'];
-$Price = $row['Price'];
+$tables = $row['tables'];
 
-require('components/room_info.php');
+require('components/rest_info.php');
 require('components/footer.php');

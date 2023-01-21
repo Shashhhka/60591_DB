@@ -4,10 +4,11 @@ require('auth.php');
 require('components/header.php');
 
 if ($_SESSION['username']){
-    if ($_POST['date_arrival']){
+    if ($_POST['date_booking']){
 
-        $date1 = $_POST['date_arrival'];
-        $date2 = $_POST['date_departure'];
+        $date1 = $_POST['date_booking'];
+        $time1 = $_POST['time_start'];
+        $time2 = $_POST['time_end'];
         require('components/book_add2.php');
     }
     else echo "Ошибка";
