@@ -4,6 +4,7 @@ require('auth.php');
 require('components/header.php');
 
 if ($_SESSION['username']) {
+    echo "<section class='form'><div class='container'><h1>СПИСОК РЕСТОРАНОВ</h1></div></section>";
 
     $sql = "SELECT * FROM restaurant";
 

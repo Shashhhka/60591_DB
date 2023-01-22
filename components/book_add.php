@@ -1,6 +1,6 @@
 <section class="form">
     <div class="container">
-        <h1 class="catalog-title">Создание бронирования</h1>
+        <h1 class="catalog-title">СОЗДАНИЕ БРОНИРОВАНИЯ</h1>
         <form method="post" action="..\new_bookinf.php" enctype="multipart/form-data">
             <p>
                 <label for="id1">Дата брони:</label>

@@ -10,12 +10,12 @@
 
             <?php
             echo "<label for='id2'>Время начала брони:</label>";
-            echo '<input readonly type="time" name="date_departure" step="2" id="id2" value="'.$time1.'">';
+            echo '<input readonly type="time" name="time_start" step="2" id="id2" value="'.$time1.'">';
             ?>
 
             <?php
             echo "<label for='id3'>Время окончания брони:</label>";
-            echo '<input readonly type="time" name="date_departure" step="2" id="id3" value="'.$time2.'">';
+            echo '<input readonly type="time" name="time_end" step="2" id="id3" value="'.$time2.'">';
             ?>
 
             <?php
