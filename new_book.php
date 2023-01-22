@@ -11,7 +11,7 @@ if ($_SESSION['username']){
         $time2 = $_POST['time_end'];
 
         $result = $conn->query("INSERT INTO booking(id_guest, id_table, date_booking, time_start, time_end)
-             VALUES ('".$_POST['id_guest']."','".$_POST['id_table']."','".$date1."','".$time1."','".$time2."')");
+             VALUES ('".$_SESSION['id_auth_user']."','".$_POST['id_table']."','".$date1."','".$time1."','".$time2."')");
         $message = 'БРОНИРОВАНИЕ СОЗДАНО';
     }
     require('components/book_add.php');
