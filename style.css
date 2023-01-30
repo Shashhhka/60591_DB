@@ -15,7 +15,8 @@ th, td {
 
 .site-header {
     background-color: #ffffff;
-//background-color: #7b2248;
+    /*background-color: #7b2248;*/
+
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,7 +61,8 @@ th, td {
     border: 1px solid white;
     border-radius: 10px;
     background-color: #ffffff;
-//background-color: #7b2248;
+    /*background-color: #7b2248;*/
+
 }
 
 .site-footer a {
@@ -72,7 +74,9 @@ th, td {
     border: 0px;
     color: #ffffff;
     background-color: #ffffff;
-//background-color: #7b2248;
+    /*background-color: #7b2248;*/
+
+
 }
 
 input, textarea, select{
@@ -161,7 +165,8 @@ a {
     text-align: center;
 
     background-color: #ffffff;
-//background-color: #7b2248;
+    /*background-color: #7b2248;*/
+
     border-radius: 4px 0 0 4px;
 }
 
@@ -187,7 +192,8 @@ a {
 .site-footer {
     text-align: right;
     background-color: #ffffff;
-//background-color: #7b2248;
+    /*background-color: #7b2248;*/
+
 }
 
 .pagination {
@@ -218,7 +224,8 @@ a {
 .pagination a:hover {
     color: #ffffff;
     background-color: #ffffff;
-//background-color: #7b2248;
+    /*background-color: #7b2248;*/
+
 }
 
 .pagination a:active {
@@ -228,7 +235,8 @@ a {
 .pagination a.current {
     color: #ffffff;
     background-color: #ffffff;
-    //background-color: #7b2248;
+    /*background-color: #7b2248;*/
+
     cursor: default;
 }
 
